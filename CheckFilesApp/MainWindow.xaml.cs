@@ -28,5 +28,10 @@ namespace CheckFilesApp
                 }
             }
         }
+
+        private void ScanButton_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.ScanDirectory().Wait();
+        }
     }
 }
